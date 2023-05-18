@@ -25,9 +25,9 @@ class User
         return "My name is " . $this->name . ".";
     }
 
-    public function tellAge(): string
+    public function tellAge(): int
     {
-        return "I am " . $this->age . " years old.";
+        return $this->age;
     }
 
     public function addFavoriteMovie(string $movie): bool
