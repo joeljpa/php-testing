@@ -25,7 +25,7 @@ class User
         return "My name is " . $this->name . ".";
     }
 
-    public function tellAge(): int
+    public function tellAge(): int //modified to int from original
     {
         return $this->age;
     }
