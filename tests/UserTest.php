@@ -23,12 +23,13 @@ final class UserTest extends TestCase
         $this->assertStringContainsStringIgnoringCase('John', $user->tellName());
     }
 
+    // The testAge method is very similar to testName and uses the same logic...or does it have to? ;)
     public function testTellAge()
     {
         $user = new User(18, 'John');
 
-        $this->assertIsString($user->tellAge());
-        $this->assertStringContainsStringIgnoringCase('18', $user->tellAge());
+        $this->assertIsInt($user->tellAge());
+        $this->assertEquals('18', $user->tellAge());
     }
 
     public function testAddFavoriteMovie()
